@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: rgb(5, 187, 187);
+    height: 50px;
+    font-size: 2em;
+    color: white;
+    padding: 20px;
+}
+
+.todoform {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.todoinput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+    height: 50px;
+}
+
+
+
+/* BUTTONS CSS */
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+
+  .button {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(20, 20, 39);
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .addButton {
+    background-color: rgb(71, 172, 255);
+  }
+
+  .addButton:hover {
+    background-color: green;
+  }
+
+  .removeButton {
+    background-color: rgb(71, 172, 255);
+  }
+
+  .removeButton:hover {
+    background-color: rgb(194, 46, 9);
+  }
+
+.todogrid {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .todogridItem {
+    padding: 10px;
+  }
+
+  .even {
+    background-color: #f2f2f2;
+  }
+
+  .odd {
+    background-color: #97fcf7;
+  }
