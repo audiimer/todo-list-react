@@ -1,12 +1,14 @@
 body {
     margin: 0;
     font-family: sans-serif;
+
 }
 
 .header {
+    text-align: center;
     background-color: rgb(5, 187, 187);
     height: 50px;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     padding: 20px;
 }
@@ -14,8 +16,10 @@ body {
 .todoform {
     width: 100%;
     margin: auto;
-    margin-top: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100px);
+  }
 
 .todoinput {
     width: 100%;
@@ -26,8 +30,6 @@ body {
     height: 50px;
 }
 
-
-
 /* BUTTONS CSS */
 .buttonContainer {
     display: flex;
@@ -36,7 +38,6 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-
 
   .button {
     width: 40%;
@@ -69,6 +70,8 @@ body {
     background-color: rgb(194, 46, 9);
   }
 
+
+/* ITEMS LIST CSS */
 .todogrid {
     width: 50%;
     margin: 0 auto;

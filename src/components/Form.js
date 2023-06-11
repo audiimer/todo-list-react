@@ -7,7 +7,7 @@ function Form() {
     const [todos, setTodos] = useState([]);
 
     // Function to handle form submit
-    const handleFormSubmit = (event,action) => {
+    const handleFormSubmit = (event, action) => {
         setInputValue(event.target.value);
         event.preventDefault();
 
@@ -27,6 +27,7 @@ function Form() {
 
     return (
         <div className={styles.todoform}>
+
             <form onSubmit={handleFormSubmit}>
                 <input className={styles.todoinput} placeholder='Add Todo Item' type="text" value={inputValue} onChange={handleFormSubmit}></input>
                 <div className={styles.buttonContainer}>
@@ -34,21 +35,17 @@ function Form() {
                     <button className={`${styles.button} ${styles.removeButton}`} type="submit" onClick={(event) => handleFormSubmit(event, 'remove')}>Remove</button>
                 </div>
             </form>
-            <div className={styles.todogrid}>
 
+            <div className={styles.todogrid}>
                 {todos.map((todo, index) => (
 
                     <div className={`${styles.todogridItem}   ${index % 2 === 0 ? styles.even : styles.odd}`} key={index}>
                         <span className={styles.number}>{index + 1}. </span>
                         {todo}
                     </div>
-
                 ))}
-
             </div>
-
         </div>
-
     )
 }
 
